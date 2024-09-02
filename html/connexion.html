@@ -1,0 +1,54 @@
+<!DOCTYPE html> <!-- Version 5 de HTML-->
+<html lang="fr">
+  <head>
+    <title>Connexion</title>
+    <meta charset="UTF-8">
+    <link rel= "stylesheet" href="../css/style.css">
+    <script src="../js/connexion.js"></script>
+    <script src="../data/users.json"></script>
+  </head>
+  <body>
+
+    <header>
+      <h1>Formulaire de Connexion</h1>
+    </header>
+    
+    <section id="loginSection">
+      <h3>Entrer avec un compte</h3>
+      <div class="formulaire">
+        <form id="loginForm">
+          <label for="pseudo">Pseudo:</label>
+          <input type="text" id="pseudo" name="pseudo" required>
+          <br>
+          <label for="password">Mot de passe:</label>
+          <input type="password" id="password" name="password" required>
+          <br>
+          <span>Pas de compte ?</span>
+          <a href="inscription.html">S'inscrire</a>
+          <br><br>
+          <button type="button" onclick="login()">Se Connecter</button>
+        </form>
+      </div>
+
+      <h3>Entrer en tant qu'invité</h3>
+      <div class="formulaire">
+        <form id="loginForm2">
+          <label for="guest">Pseudo:</label>
+          <input type="text" id="guest" name="guest" required>
+          <br><br>
+          <button type="button" onclick="loginGuest()">Entrer</button>
+        </form>
+      </div>
+    </section>
+    
+    <footer>
+      <a href="apropos.html">A propos</a>
+    </footer>
+
+
+    <script>       
+      
+    </script>
+
+  </body>
+</html>

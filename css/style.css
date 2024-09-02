@@ -1,0 +1,301 @@
+
+
+body {
+  background-image: url("../img/wallpaper.jpg");
+  background-size: cover;
+  color: #ffd35c;
+  min-height: 100vh;
+  margin: 0; 
+  display: flex;
+  flex-direction: column; 
+}
+
+header {
+  background-color: #ffd35c;
+  color: #65341f;
+  text-align: center;
+  border-radius: 0px 0px 10px 10px;
+  box-shadow: 0px 5px 10px #65341f;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  display: flex;
+  flex-direction: row; 
+}
+
+
+header a {
+  float: left;
+  text-align: center;
+  margin: 5px;
+  margin-left: 10px;
+  margin-right: 10px;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 25px;
+  border-radius: 4px;
+  color: white;
+  background-color: #65341f;
+  box-shadow: 0 0 3px 1px white inset;
+}
+
+header a:hover {
+  color: #65341f;
+  background-color: white;
+  box-shadow: 0 0 3px 1px #65341f inset;
+}
+
+section {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+canvas{
+  background-color: grey;
+  margin: 5px; /* haut | droit | bas | gauche */
+  width: 98%;
+}
+
+td, th {
+  border: 1px solid black;
+}
+
+footer {
+  background-color: #ffd35c;
+  color: #65341f;
+  text-align: center;
+  border-radius: 10px 10px 0px 0px;
+  box-shadow: 0px -5px 10px white;
+  bottom: 0;
+	position: sticky;
+}
+
+footer a {
+  float: left;
+  text-align: center;
+  margin: 5px;
+  margin-left: 10px;
+  margin-right: 10px;
+  padding: 12px;
+  font-size: 18px;
+  line-height: 25px;
+  color: white;
+}
+
+footer a:hover {
+  color: #65341f;
+}
+
+form {
+  text-align: center;
+}
+
+form label {
+  display: block;
+  margin: 10px;
+}
+
+form input {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+}
+
+form button {
+  padding: 10px;
+}
+
+table {
+  border: 1px solid #65341f;
+  text-align: center;
+}
+
+thead {
+  background-color: #65341f;
+  color: white;
+}
+
+
+#logo {
+  width: 80%;
+  float: center;
+  text-align: center;
+}
+
+#logo img{
+  width : 200px;
+  height: 50px;
+  padding: 20px;
+}
+
+#profilLogo {
+  height: 65px;
+  padding: 20px;
+}
+
+#barreNavigation {
+  float: left;
+}
+
+#profil {
+  float: left;
+  display: flex;
+  align-items: center;
+}
+
+#loginSection h3 {
+  margin: 30px 0 0 0;
+}
+
+#playgroundGame1 {
+  background-image: url("../img/landscape.png");
+  background-size: cover;
+  border: 2px solid #ffd35c;
+  width: 540px;
+  height: 540px;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+}
+
+#playgroundGame1 div {
+  background-image: url("../img/hole.png");
+  background-size: cover;
+  width: 180px;
+  height: 180px;
+  cursor: pointer;
+}
+
+#playgroundGame1 button {
+  align-self: center;
+  margin: auto;
+}
+
+#playgroundGame2 {
+  background-image: url("../img/landscape.png");
+  background-size: cover;
+  border: 2px solid #ffd35c;
+  background-color: green;
+  width: 540px;
+  height: 540px;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+}
+
+#playgroundGame2 button {
+  align-self: center;
+  margin: auto;
+}
+
+#logoutButton {
+  font-size: 10px;
+  line-height: 20px;
+  border-radius: 4px;
+  color: white;
+  background-color: #65341f;
+  box-shadow: 0 0 3px 1px white inset;
+}
+
+#logoutButton:hover {
+  color: #65341f;
+  background-color: white;
+  box-shadow: 0 0 3px 1px #65341f inset;
+}
+
+#barreNavigationProfil {
+  display: flex;
+  flex-direction: column; 
+}
+
+.formulaire {
+  background-color: #ffd35c;
+  color: #65341f;
+  width: 40%;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0px; 
+  
+  border-radius: 3%;
+  border: 2px solid white;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px white;
+}
+
+.catalogueGame {
+  background-color: #ffd35c;
+  color: #65341f;
+  width: 40%;
+  height: 400px;
+  margin: 50px; 
+  display: flex;
+  flex-direction: column;
+  border-radius: 3%;
+  border: 2px solid white;
+  border-radius: 10px 10px 10px 10px;
+  box-shadow: 0px 0px 10px white;
+}
+
+.catalogueGameImg {
+  height: 200px;
+  margin: 10px; 
+}
+
+.infoGame {
+  margin-left: 10px; 
+  display: flex;
+  flex-direction: row;
+}
+
+.infoGame div {
+  padding: 10px;
+  text-align: left;
+}
+
+.playground {
+  background-color: #ffd35c;
+  color: black;
+  height: 600px;
+  width: 70%;
+}
+
+.informations div {
+  background-color: white;
+  color: #65341f;
+  padding: 20px;
+  margin: 30px;
+  text-align: left;
+  font-size : 1em;
+}
+
+.informations img {
+  height: 300px;
+}
+
+.card {
+  width: 101px;
+  height: 128px;
+  margin: 2px;
+  border-radius: 10px;
+  border: solid white;
+}
+
+@media screen and (max-width: 500px) {
+  .infoGame div {
+    padding: 1px;
+  }
+
+  .informations img {
+  height: 50px;
+}
+}
+
+
+

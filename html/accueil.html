@@ -1,0 +1,87 @@
+<!DOCTYPE html> <!-- Version 5 de HTML-->
+<html lang="fr">
+  <head> 
+    <title>Accueil</title> 
+    <meta charset="UTF-8"> 
+    <link rel= "stylesheet" href="../css/style.css">
+    <script src="../js/script.js"></script>
+  </head>
+  
+  <body>
+    <header>
+      <div id="barreNavigationProfil">
+        <div id="profil"> 
+          <div><img id="profilLogo" alt="profilLogo" src="../img/molang.png"></div>
+          <div>
+            <h3>Hello <span id="pseudoPlace"></span></h3>
+            <button id="logoutButton" onclick="logout()">Déconnexion</button>
+          </div>  
+        </div>
+        <div id="barreNavigation">
+          <a href="./accueil.html">Accueil</a>
+          <a href="./catalogue.html">Catalogue</a>
+        </div>
+      </div>
+      <div id="logo"><h1><img alt="logo" src="../img/Molang_Logo.png"><br>Accueil</h1></div>
+    </header>
+    
+    <section class="informations">
+      
+      <div>
+        <h3>Présentation</h3>
+        Bienvenu sur le site proposant des mini-jeux sur le thème de Molang.
+        <br><br>
+        <table>
+          <thead>
+            <tr>
+              <th colspan="2">Jeu</th>
+              <th colspan="1">Difficulté</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Jeu de la taupe</td>
+              <td>
+                Frappez sur les Molangs qui apparaissent pour gagner des points. 
+                Mais attention si vous frappez sur les chenilles la partie est terminée !
+              </td>
+              <td>Facile</td>
+            </tr>
+            <tr>
+              <td>Cartes mémoires</td>
+              <td>
+                Retrouvez les paires en ne retournant que deux cartes à la fois. 
+                Si vous obtienez les mêmes motifs vous remportez la paire, le jeu continue jusqu'à trouver 
+                toutes les paires.
+              </td>
+              <td>Moyen</td>
+            </tr>
+          </tbody>
+        </table>
+
+      </div>
+      <div>
+        <h3>Molang</h3>
+        Molang est une série d'animation franco-sud-coréenne produite par le studio 
+        d'animation Millimages et réalisée par Marie-Caroline Villand.<br>
+        Elle met en scène deux personnages : Molang, un lapin et Piu-Piu, un poussin, 
+        qui communiquent avec un langage universel : le « molangais ». 
+        Ceci permet à la série de facilement s'exporter dans le monde entier et 
+        être diffusée dans près de 200 pays.<br><br>
+        L'histoire se base sur l'amitié indéfectible de deux personnages : Molang et 
+        Piu Piu. Le premier est un lapin blanc toujours joyeux, le second un poussin jaune, 
+        timide et émotif3.
+       </div>
+       <img id="imgAccueil" alt="imgAccueil" src="../img/moland_piupiu.png">
+    </section>
+    
+    <footer>
+      <a href="apropos.html">A propos</a>
+    </footer>
+    
+    <script>
+      var pseudo = localStorage.getItem('pseudo');
+      profil(pseudo);
+    </script>
+  </body>
+</html>

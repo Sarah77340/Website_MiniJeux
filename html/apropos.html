@@ -1,0 +1,65 @@
+<!DOCTYPE html> <!-- Version 5 de HTML-->
+<html lang="fr">
+  <head> 
+    <title>A propos</title> 
+    <meta charset="UTF-8"> 
+    <link rel= "stylesheet" href="../css/style.css">
+    <script src="../js/script.js"></script>
+  </head>
+  
+  <body>
+    <header>
+      <div id="barreNavigationProfil">
+        <div id="profil"> 
+          <div><img id="profilLogo" alt="profilLogo" src="../img/molang.png"></div>
+          <div>
+            <h3>Hello <span id="pseudoPlace"></span></h3>
+            <button id="logoutButton" onclick="logout()">Déconnexion</button>
+          </div>  
+        </div>
+        <div id="barreNavigation">
+          <a href="./accueil.html">Accueil</a>
+          <a href="./catalogue.html">Catalogue</a>
+        </div>
+      </div>
+      <div id="logo"><h1><img alt="logo" src="../img/Molang_Logo.png"><br>A propos</h1></div>
+    </header>
+    
+    <section class="informations">
+      <div>
+        <h2>Informations</h2>
+        Ce site web a été créé dans le cadre d'un projet de Programmation WEB TI504N à Efrei.<br>
+        Auteur: Sarah Nguyen L3N <br>
+        Date: 2023-2024<br>
+        Ce projet est à réalisé en utilisant HTML, CSS et Javascript dans le cadre du cours de 
+        programmation web. Il s’agit d’un site web proposant des minis-jeux sur le thème d’un 
+        personnage d’animation nommé Molang.
+      </div>
+      <div>
+        <h2>Difficultés rencontrées</h2>
+        <h3>Jeu de la taupe</h3>
+        J’ai rencontré des difficultés lors de la détection de clic puisque lors de la comparaison 
+        entre clickedTile et this.molangIndex,  clickedTile ne correspondait pas à un div mais à 
+        l’image du dessus , à savoir Molang ou la chenille. La solution trouvée a été de prendre 
+        l’élément parent pour trouvé le div, comme vous pouvez le voir dans game.js dans la fonction 
+        selectTile(). 
+        <br>
+        <h3>Inscription</h3>
+        Ayant rencontré des difficultés pour l’utilisation de fetch avec json à cause de la politique 
+        CORS et la façon dont les requêtes de ressources provenant d’origines différentes sont restreintes 
+        par les navigateurs, je n’ai pas pu écrire dans le fichier JSON. Dans le contexte du développement 
+        local, cette restriction m’empêche alors d’écrire les informations d’un formulaire dans le fichier 
+        JSON et de sauvegarder l’inscription. Une des solutions possible aurait été de démarrer un serveur 
+        web local, ce qui n’a pas été fait puisque je ne savais pas si cela rentrait dans les consignes du 
+        projet.
+      </div>
+     
+    </section>
+    
+    <footer>
+        <a href="apropos.html">A propos</a>
+    </footer>
+  </body>
+  
+  
+</html>
